@@ -1,0 +1,19 @@
+const a = 42
+const b = "Hello"
+const c = null
+
+console.log(a||b) //42
+console.log(c||b) //Hello  , OR operators give first value as output ,if the first value is null then give the second value.
+
+console.log(a&&b) //Hello
+console.log(a&&c); //null  , AND operators give second value.
+
+
+function greet (name){
+    console.log(`Hello, ${name||"Visitor"}!`)
+}
+
+greet("World")
+
+console.log(42 == "42"); // Here check only value. It is Called Equality Operator.
+console.log(42 === "42"); // Here check value and datatype. It is called Strict Equality Operator.
